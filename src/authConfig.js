@@ -2,7 +2,10 @@ export const msalConfig = {
   auth: {
     clientId: "de747df2-4460-4e77-9a94-3e012089f8b9",
     authority: "https://login.microsoftonline.com/common",
-    redirectUri: "http://localhost:5173",
+    redirectUri:
+      window.location.hostname === "localhost"
+        ? "http://localhost:5173"
+        : "https://chiare7.github.io/finanze-app/",
   },
   cache: { cacheLocation: "localStorage" },
 };
@@ -12,5 +15,5 @@ export const loginRequest = {
   prompt: "select_account",
 };
 
-// Percorso del file su OneDrive, da adattare al tuo
-export const FILE_PATH = "/Documenti/DB_Spese/DB_Spese.xlsx";
+// Percorso del file su OneDrive
+export const FILE_PATH = "/Finanze/DB_Spese__template_.xlsx";
