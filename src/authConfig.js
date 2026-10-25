@@ -16,4 +16,4 @@ export const loginRequest = {
 };
 
 // Percorso del file su OneDrive
-export const FILE_PATH = "/Documents/DB_Spese/DB_Spese.xlsx";
+export const FILE_PATH = "/Documenti/DB_Spese/DB_Spese.xlsx";
