@@ -7,7 +7,10 @@ export const msalConfig = {
   cache: { cacheLocation: "localStorage" },
 };
 
-export const loginRequest = { scopes: ["User.Read", "Files.ReadWrite"] };
+export const loginRequest = {
+  scopes: ["User.Read", "Files.ReadWrite"],
+  prompt: "select_account",
+};
 
 // Percorso del file su OneDrive, da adattare al tuo
 export const FILE_PATH = "/Documenti/DB_Spese/DB_Spese.xlsx";
